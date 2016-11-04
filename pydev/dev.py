@@ -4,7 +4,7 @@ from pybedtools import BedTool
 def add(x, y):
     '''
     >>> add(10, 20)
-    >>> 30
+    30
     '''
     return x + y
 
