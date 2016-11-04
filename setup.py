@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 from setuptools import setup, find_packages
-from seqlib.version import __version__
+from pydev.version import __version__
 
 
-setup(name='seqlib',
+setup(name='pydev',
       version=__version__,
       description='Test python development environment',
       author='Xiao-Ou Zhang',
