@@ -1,4 +1,4 @@
-.PHONY: clean-pyc clean-build docs clean
+.PHONY: clean clean-build clean-pyc test
 
 help:
 	@echo "clean - remove all build, test, coverage and Python artifacts"
@@ -22,4 +22,4 @@ clean-pyc:
 	find . -name '__pycache__' -exec rm -fr {} +
 
 test:
-	nosetests --with-doctest -v --with-coverage
+	nosetests --with-doctest -v --with-coverage --cover-package=pydev
