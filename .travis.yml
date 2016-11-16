@@ -18,8 +18,10 @@ before_install:
   - conda info -a
 
 install:
-  - conda install --yes python=$TRAVIS_PYTHON_VERSION pip nose coverage
+  - conda install --yes python=$TRAVIS_PYTHON_VERSION pip
   - conda install --yes --file conda_requirements.txt --channel bioconda
+  - pip install pytest
+  - pip install pytest-cov
   - pip install codecov  # for codecov
   - pip install coveralls # for coveralls
   - pip install -r requirements.txt

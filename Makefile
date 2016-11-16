@@ -22,4 +22,4 @@ clean-pyc:
 	find . -name '__pycache__' -exec rm -fr {} +
 
 test:
-	nosetests --with-doctest -v --with-coverage --cover-package=pydev
+	pytest --cov=pydev pydev
