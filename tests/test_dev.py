@@ -1,6 +1,6 @@
 import os
 import filecmp
-from pydev.dev import sort_bed
+from pydev.dev import sort_bed, minus
 
 
 def test_sort_bed():
@@ -11,3 +11,7 @@ def test_sort_bed():
     result = os.path.join(test_data_path, 'data/o.bed')
     assert filecmp.cmp(result, out), 'Error!!!'
     os.remove(out)
+
+
+def test_minus():
+    assert minus(5, 3) == 2, 'Error!!!'
