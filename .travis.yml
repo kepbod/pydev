@@ -23,6 +23,7 @@ install:
   - pip install pytest
   - pip install pytest-cov  # for coverage
   - pip install pytest-flake8 # for lint
+  - pip install pytest-helpers-namespace  # register helper namespace
   - pip install codecov  # for codecov
   - pip install coveralls # for coveralls
   - pip install -r requirements.txt

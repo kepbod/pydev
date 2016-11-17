@@ -1,13 +1,14 @@
 import os
 import filecmp
+import pytest
 from pydev.dev import sort_bed, minus
 
 
 def test_sort_bed(data_folder):
-    bed = os.path.join(data_folder, 'data/t.bed')
-    out = os.path.join(data_folder, 'data/n.bed')
+    bed = pytest.helper.data_path('t.bed')
+    out = pytest.helper.data_path('n.bed')
     sort_bed(bed, out)
-    result = os.path.join(data_folder, 'data/o.bed')
+    result = pytest.helper.data_path('o.bed')
     assert filecmp.cmp(result, out), 'Error!!!'
     os.remove(out)
 
