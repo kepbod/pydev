@@ -1,12 +1,6 @@
 import os
 import filecmp
-import pytest
 from pydev.dev import sort_bed, minus
-
-
-@pytest.fixture
-def data_folder():
-    return os.path.abspath(os.path.dirname(__file__))
 
 
 def test_sort_bed(data_folder):
