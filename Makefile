@@ -1,4 +1,4 @@
-.PHONY: clean clean-build clean-pyc clean-test lint test
+.PHONY: clean clean-build clean-pyc clean-test lint test docs
 
 help:
 	@echo "clean - remove all build, test, coverage and Python artifacts"
@@ -7,6 +7,7 @@ help:
 	@echo "clean-test - remove test and coverage artifacts"
 	@echo "lint - check style with flake8"
 	@echo "test - run tests quickly with the default Python"
+	@echo "docs - generate Sphinx HTML documentation, including API docs"
 
 clean: clean-build clean-pyc clean-test
 
@@ -31,3 +32,10 @@ lint:
 
 test:
 	pytest pydev
+
+docs:
+	rm -f docs/pydev.rst
+	rm -f docs/modules.rst
+	sphinx-apidoc -o docs/ pydev
+	$(MAKE) -C docs clean
+	$(MAKE) -C docs html

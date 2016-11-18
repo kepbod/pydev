@@ -10,10 +10,16 @@ def add(x, y):
 
 
 def minus(x, y):
+    '''
+    X - Y
+    '''
     return x - y
 
 
 def sort_bed(fn, out):
+    '''
+    Sort bed files
+    '''
     bed = BedTool(fn)
     sorted_bed = bed.sort()
     sorted_bed.saveas(out)
