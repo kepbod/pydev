@@ -1,3 +1,5 @@
+[![readthedocs](https://readthedocs.org/projects/pydev/badge/?version=latest)](http://pydev.readthedocs.io/en/latest/?badge=latest)
+
 [pytest](http://pytest.org)(pytest is a very popular python testing framework): [pytest branch](https://github.com/kepbod/pydev/tree/master)
 * [Travis CI](https://travis-ci.org): [![travis-ci](https://travis-ci.org/kepbod/pydev.svg?branch=master)](https://travis-ci.org/kepbod/pydev)
 * [Codecov](https://codecov.io): [![codecov](https://codecov.io/gh/kepbod/pydev/branch/master/graph/badge.svg)](https://codecov.io/gh/kepbod/pydev/branch/master)
