@@ -19,8 +19,7 @@
 import os
 import sys
 
-cwd = os.getcwd()
-project_root = os.path.dirname(cwd)
+project_root = os.path.dirname(os.getcwd())
 sys.path.insert(0, project_root)
 
 import pydev
@@ -64,7 +63,7 @@ author = u'Xiao-Ou Zhang'
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
-#
+
 import pydev.version
 # The short X.Y version.
 version = pydev.version.__version__
@@ -142,8 +141,8 @@ html_theme = 'alabaster'
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#
-# html_title = u'pydev v0.0.1'
+
+html_title = u'pydev v%s' % release
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
